@@ -1,7 +1,8 @@
 import java.io.IOException;
+import java.util.HashMap;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         /*
         int[] arr1 = {5, 2, 4, 1, 3};
@@ -19,6 +20,9 @@ public class Main {
         Homework2.Task3();
         System.out.println(Homework2.inputstring());
         */
+        String [] arr = Homework3.enterData();
+        HashMap <String,Object> data =Homework3.parsData(arr);
+        Homework3.CreateOutput(data);
     }
 
 }
